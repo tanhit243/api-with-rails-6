@@ -31,12 +31,19 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+/config/credentials.yml.enc
 
+# ENV
+/config/application.yml
+
+# IDE
+./idea
+/.vscode
+
+# Another
 /public/packs
 /public/packs-test
 /node_modules
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
-
-./idea
