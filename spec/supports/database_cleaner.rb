@@ -19,8 +19,4 @@ RSpec.configure do |config|
   config.after(:each) do
     DatabaseCleaner.clean
   end
-
-  config.after(:suite) do
-    ActiveRecord::Base.connection.execute('TRUNCATE m_units')
-  end
 end
