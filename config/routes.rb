@@ -7,7 +7,8 @@ Rails.application.routes.draw do
                  },
                  only: :sessions,
                  path_names: { sign_in: :login, sign_out: :logout }
-      resources :users, only: :show
+
+      resources :users, only: %i[show index]
     end
   end
 end
